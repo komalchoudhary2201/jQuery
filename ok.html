@@ -1,0 +1,41 @@
+
+	<head>
+		<title>RSUniverse Computer Insitute</title>
+	</head>
+<body onresize="ok5()" id="body" style="background:black;">
+<p style="color:green;" id="dark">fhkg</p>
+<button id="btn" onclick="bgSwap()"> Swap </button>
+
+<form >
+	<input type="text" id="bgcolor" onfocus="ok()" onblur="ok2()" value="normal"><br><br>
+	<input type="text" onchange="ok3()"><br><br>
+	<input type="text"><br><br>
+</form>
+
+<script>
+function ok5(){
+	alert("lll");
+}
+function ok3(){
+	console.log("you changed")
+}
+
+function ok(){
+	document.getElementById("bgcolor").value="focussed";
+}
+
+function ok2(){
+	document.getElementById("bgcolor").value="hello";
+}
+function bgSwap(){
+	el = document.getElementById("body").style.background;
+	if(el=="black"){
+		document.getElementById("body").style.background = "white";
+	}else{
+		document.getElementById("body").style.background = "black";
+	}
+}
+
+ </script>
+</body>
+</html>

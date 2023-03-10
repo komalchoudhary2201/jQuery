@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>formval</title>
+	</head>
+<body>
+	<form onsubmit="return sub()">
+		<input type="text" placeholder="name" id="nam"><br><br>
+		<input type="email" placeholder="email" id="em"><br><br>
+		<input type="text" placeholder="age" id="eg"><br><br>
+		<input type="number" placeholder="phone no." id="no"><br><br>
+		<input type="text" placeholder="country" id="cn"><br><br>
+		<input type="submit" value ="sub">
+	</form>
+<script>
+	function sub(){
+		let name = document.getElementById("nam").value;
+		let email = document.getElementById("em").value;
+		let age = document.getElementById("eg").value;
+		let phone = document.getElementById("no").value;
+		let country = document.getElementById("cn").value;
+		
+		document.write("name is : ",name,"<br>");
+		document.write("email is : ",email,"<br>");
+		document.write("age is : ",age,"<br>");
+		document.write("phone number is : ",phone,"<br>");
+		document.write("country is : ",country);
+		
+		if(name == "" || email == "" || age == "" || phone == "" || country == ""){
+			alert("Fill required fields")
+			return false;
+		}
+	}
+<!-- let a = [6, 7 ,4, 3, 9]; -->
+<!-- a.map(add); -->
+<!-- function add(x){ -->
+	<!-- document.write(x*x*x,"<br>"); -->
+<!-- } -->
+</script>
+</body>
+</html>

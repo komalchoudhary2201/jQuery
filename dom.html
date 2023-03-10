@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>dom</title>
+	</head>
+<body>
+	<input type="text" placeholder="name" id="inp1" onkeyup="enter()">
+	<input type="text" placeholder="phon no." id="inp2" onkeyup="ch()">
+	<input type="text" placeholder="city" id="inp3" onkeyup="hp()">
+	<input type="text" placeholder="address" id="inp4" onkeyup="dd()">
+	<input type="text" placeholder="dob" id="inp5" onkeyup="db()">
+	<input type="text" placeholder="roll no." id="inp6" onkeyup="rn()">
+	
+	<div style="border:2px solid grey;margin:auto;padding:5px 10px;width:20%;margin-top:5%">
+		Name : <span id="nam"></span><br><br>
+		Phone no. : <span id="phn"></span>&nbsp;&nbsp;&nbsp;
+		City : <span id="ct"></span><br><br>
+		Address : <span id="ad"></span><br><br>
+		D.O.B : <span id="dob"></span>&nbsp;&nbsp;&nbsp;
+		Roll No. :<span id="rol"></span>
+	</div>
+<script>
+	function popup(){
+		alert("hello")
+	}
+	function enter(){
+		x=document.getElementById("inp1").value;
+		document.getElementById("nam").innerHTML=x;
+	}
+	function ch(){
+		x=document.getElementById("inp2").value;
+		document.getElementById("phn").innerHTML=x;
+	}
+	function hp(){
+		x=document.getElementById("inp3").value;
+		document.getElementById("ct").innerHTML=x;
+	}
+	function dd(){
+		x=document.getElementById("inp4").value;
+		document.getElementById("ad").innerHTML=x;
+	}
+	function db(){
+		x=document.getElementById("inp5").value;
+		document.getElementById("dob").innerHTML=x;
+	}
+	function rn(){
+		x=document.getElementById("inp6").value;
+		document.getElementById("rol").innerHTML=x;
+	}
+</script>
+</body>
+</html>
